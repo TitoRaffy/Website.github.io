@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<!--Note: This website is just a prototype, not everything has working function, 
+    some are just there for presentation, to show what they're supposed to do-->
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="CSS/website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--this link consists of different texts and icons that I got from cloudfare.com-->
+</head>
+
+<body>
+    <!--Header section consists of the logo,search bar, social media buttons, and the wish list icon-->
+    <header class="hdr">
+        <a href="index.html" class="logo"></a>
+        <img
+            src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/press_rooms/company_logos/13858/d572146a2c231390316666a7227d7b70.jpg">
+
+        <div class="srchbar">
+            <!--Note: The search function only works for the "brand" section of the website where you can search a specific product-->
+            <input type="text" placeholder="Looking for Something...?" id="srch-prod" onkeyup="search()">
+            <!--"onkeyup" lets the user type any value and sends a signal to JS, and the products will display upon matching the user input values-->
+            <div class="srchbtn">
+                <!--I used the <i> tag to add the search icon-->
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <div class="signup">
+
+            <ul>
+                <li><a href="Pages/_login.html">Log In</a></li>
+                <!--This page is for the log in section where you can log in an account-->
+            </ul>
+
+        </div>
+
+    </header>
+    <!--I separated the nav bar from the header so it can have its own section and not look crowded-->
+    <nav>
+        <!--container class for the navigation bar-->
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pages/_about.html">About</a></li>
+                <li><a href="#brands">Brands +</a>
+                    <!--the dropdown section is specifically only for the brands section-->
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="Pages/_acaia.html">Acaia</a></li>
+                            <li><a href="Pages/_aeropress.html">AeroPress</a></li>
+                            <li><a href="Pages/_comandante.html">Comandante</a></li>
+                            <li><a href="Pages/_fellow.html">Fellow</a></li>
+                            <li><a href="Pages/_hario.html">Hario</a></li>
+                            <li><a href="Pages/_moccamaster.html">Moccamaster</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Pages/_contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--I made a "contact us" container and in here the user can register by typing your first and last, Email, and Mobile number-->
+    <div class="container2">
+        <form>
+            <h1>Contact Us</h1>
+            <input type="text" id="firstName" placeholder="First Name" required><!--"required" is a function that lets the user specify a value before being able to submit the form-->
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile No." required>
+            <h4>Enter Feedback...</h4> <!--User is allowed to send a feedback or a question about anything-->
+            <textarea required></textarea><!--the text box area will allow the user to enter any kind of feedback to the company-->
+            <input type="submit" value="Send" id="button"> <!--by clicking enter, user has submitted the form-->
+        </form>
+    </div>
+</body>
+
+</html>

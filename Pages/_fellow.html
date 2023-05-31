@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Note: This website is just a prototype, not everything has working function, 
+    some are just there for presentation, to show what they're supposed to do-->
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="CSS/website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--this link consists of different texts and icons that I got from cloudfare.com-->
+</head>
+
+<body>
+    <!--Header section consists of the logo,search bar, social media buttons, and the wish list icon-->
+    <header class="hdr">
+        <a href="index.html" class="logo"></a>
+        <img
+            src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/press_rooms/company_logos/13858/d572146a2c231390316666a7227d7b70.jpg">
+
+        <div class="srchbar">
+            <!--Note: The search function only works for the "brand" section of the website where you can search a specific product-->
+            <input type="text" placeholder="Looking for Something...?" id="srch-prod" onkeyup="search()">
+            <!--"onkeyup" lets the user type any value and sends a signal to JS, and the products will display upon matching the user input values-->
+            <div class="srchbtn">
+                <!--I used the <i> tag to add the search icon-->
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <div class="signup">
+
+            <ul>
+                <li><a href="Pages/_login.html">Log In</a></li>
+                <!--This page is for the log in section where you can log in an account-->
+            </ul>
+
+        </div>
+
+    </header>
+    <!--I separated the nav bar from the header so it can have its own section and not look crowded-->
+    <nav>
+        <!--container class for the navigation bar-->
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pages/_about.html">About</a></li>
+                <li><a href="#brands">Brands +</a>
+                    <!--the dropdown section is specifically only for the brands section-->
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="Pages/_acaia.html">Acaia</a></li>
+                            <li><a href="Pages/_aeropress.html">AeroPress</a></li>
+                            <li><a href="Pages/_comandante.html">Comandante</a></li>
+                            <li><a href="Pages/_fellow.html">Fellow</a></li>
+                            <li><a href="Pages/_hario.html">Hario</a></li>
+                            <li><a href="Pages/_moccamaster.html">Moccamaster</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Pages/_contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--This is section will consist of all the products of this brand-->
+    <section>
+
+        <h1 class="hdr4"><span>Fellow</span> Products </h1><!--this is the brand of these products-->
+
+    <div class="prod" id="prod-list">
+        <!--Each product consists of the product name, price and a "buy me" option (this option does not work)-->
+        <div class="cont">
+            <img src="../Pics/Atmos Canister (0.4L, Clear Glass).jpg">
+            <h3>Atmos Canister (0.4L, Clear Glass)</h3>
+            <p>AED 105.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img
+                src="../Pics/Atmos Canister (0.7L, Clear Glass).jpg">
+            <h3>Atmos Canister (0.7L, Clear Glass)</h3>
+            <p>AAED 110.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Atmos Canister (1.2L, Clear Glass).jpg">
+            <h3>Atmos Canister (1.2L, Clear Glass)</h3>
+            <p>AED 115.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img
+                src="../Pics/Atmos Canister (0.4L, Matte Black).jpg">
+            <h3>Atmos Canister (0.4L, Matte Black)</h3>
+            <p>AED 105.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img
+                src="../Pics/Atmos Canister (0.7L, Matte Black).jpg">
+            <h3>Atmos Canister (0.7L, Matte Black)</h3>
+            <p>AED 110.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Atmos Canister (1.2L, Matte Black).jpg">
+            <h3>Atmos Canister (1.2L, Matte Black)</h3>
+            <p>AED 115.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Carter Everywhere Mug (Dusk Blue, 12oz).jpg">
+            <h3>Carter Everywhere Mug (Dusk Blue, 12oz)</h3>
+            <p>AED 111.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Carter Everywhere Mug (Dusk Blue, 16oz).jpg">
+            <h3>Carter Everywhere Mug (Dusk Blue, 16oz)</h3>
+            <p>AED 120.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Carter Everywhere Mug (Matte Black, 12oz).jpg">
+            <h3>Carter Everywhere Mug (Matte Black, 12oz)</h3>
+            <p>AED 111.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Carter Everywhere Mug (Matte Black, 16oz).jpg">
+            <h3>Carter Everywhere Mug (Matte Black, 16oz)</h3>
+            <p>AED 120.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+
+        <div class="cont">
+            <img src="../Pics/Fellow Carter Move Mug 360 Sip Lid (Matte Black, 8oz).jpg">
+            <h3>Fellow Carter Move Mug W/ 360 Sip Lid (Matte Black, 8oz)</h3>
+            <p>AED 111.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Fellow Carter Move Mug 360 Sip Lid (Matte Black, 12oz).jpg">
+            <h3>Fellow Carter Move Mug W/ 360 Sip Lid (Matte Black, 12oz)</h3>
+            <p>AED 120.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Fellow Carter Move Mug WITH 360 Sip Lid (Matte White, 8 oz).jpg">
+            <h3>Fellow Carter Move Mug W/ 360 Sip Lid (Matte White, 8oz) </h3>
+            <p>AED 111.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Fellow Carter Move Mug  360 Sip Lid (Matte White, 12oz).jpg">
+            <h3>Fellow Carter Move Mug W/ 360 Sip Lid (Matte White, 12oz)</h3>
+            <p>AED 120.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Ode Brew Grinder - Black.jpg">
+            <h3>Ode Brew Grinder - Black</h3>
+            <p>AED 1,257.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Ode Brew white.jpg">
+            <h3>Ode Brew Grinder - White(EU Plug)</h3>
+            <p>AED 1,257.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+        
+        <div class="cont">
+            <img src="../Pics/Stagg EKG - Electric Pour-Over Kettle - Matte White.jpg">
+            <h3>Stagg EKG - Electric Pour-Over Kettle - Matte White</h3>
+            <p>AED 625.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/Stagg EKG - Electric Pour-Over Kettle - Matte Black.jpg">
+            <h3>Stagg EKG - Electric Pour-Over Kettle - Matte Black </h3>
+            <p>AED 625.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/monty-milk-art-cups-02-matte-white-01-latte-01_900x_1.jpg">
+            <h3>Monty Cup - Latte - Matte White 325ml (11oz)</h3>
+            <p>AED 95.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="cont">
+            <img src="../Pics/monty-milk-art-cups-01-matte-black.jpg">
+            <h3>Monty Cup 11oz - Latte - Matte Black 325ml (11oz)</h3>
+            <p>AED 95.00</p>
+            <button class="buy">Buy Now</button>
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!--the footer section of the page that consists of a social media bar, quick navigation bar, and a credits section-->
+    <section class="footer">
+        <!--"socmed" has the facebook, insta, and youtube links which u can view more contents of the company-->
+        <div class="socmed">
+            <a href="https://www.facebook.com/coffeedesk.ae" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/coffeedesk.ae/" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/@coffeedesk-bestcoffeeinthe5652" class="fa fa-youtube"></a>
+        </div>
+        <!--and "link" is aquick navigation system that allows the user to go where they want after scrolling throughout the page-->
+        <div class="link">
+            <a href="../index.html">Home</a>
+            <a href="../Pages/_about.html">About</a>
+            <a href="../Pages/_contact.html">Contact</a>
+        </div>
+        <!--this has the credits of who created the website and all rights are reserved in the copy right, and a small info about this website-->
+        <div class="crdt">
+            Created by <span>Andrey Rafael Agleron</span> | All Rights Reserved
+            <p>-A website prototype for my Fathers company-</p>
+        </div>
+
+    </section>
+    <script src="../JS/websiteJS.js"></script>
+
+
+</body>
+
+</html>

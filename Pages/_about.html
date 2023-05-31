@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../CSS/website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--this link consists of different texts and icons that I got from cloudfare.com-->
+</head>
+
+<body>
+    <!--Header section consists of the logo,search bar, social media buttons, and the wish list icon-->
+    <header class="hdr">
+        <a href="index.html" class="logo"></a>
+        <img
+            src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/press_rooms/company_logos/13858/d572146a2c231390316666a7227d7b70.jpg">
+
+        <div class="srchbar">
+            <input type="text" placeholder="Looking for Something...?" id="srch-prod" onkeyup="search()">
+            <div class="srchbtn">
+                <!--I used the <i> tag to add the search icon-->
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        
+
+        <div class="signup">
+
+            <ul>
+                <li><a href="../Pages/_login.html">Log In</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+    <!--I separated the nav bar from the header so it can have its own section and not look crowded-->
+    <nav>
+        <!--container class for the navigation bar-->
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Pages/_about.html">About</a></li>
+                <li><a href="#brands">Brands +</a>
+                    <!--the dropdown section is specifically only for the brands section-->
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../Pages/_acaia.html">Acaia</a></li>
+                            <li><a href="../Pages/_aeropress.html">AeroPress</a></li>
+                            <li><a href="../Pages/_comandante.html">Comandante</a></li>
+                            <li><a href="../Pages/_fellow.html">Fellow</a></li>
+                            <li><a href="../Pages/_hario.html">Hario</a></li>
+                            <li><a href="../Pages/_moccamaster.html">Moccamaster</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../Pages/_contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section class="abt" id="about">
+
+        <h1 class="hdr3"><span>About</span> Us</h1>
+
+        <div class="row1">
+
+            <div class="vid-cont">
+                <video src="../Pics/WhatsApp Video 2023-05-29 at 6.13.31 PM.mp4" loop autoplay muted></video>
+            </div>
+
+            <div class="content">
+                <h4>We are one of the leading coffee solutions in GCC and Europe.</h4>
+                <p>Coffeedesk is your one-stop shop for all
+                    coffee and tea-related products created by
+                    coffee lovers who want to share their
+                    passion with you.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="abt" id="about">
+
+        <div class="row1">
+
+            <div class="img-cont">
+                <img src="../Pics/aboutcoffeedesk.jpg">
+            </div>
+
+            <div class="content">
+                <h2>What makes us special?</h2>
+                <p>1. One-stop shop supplying all coffee leading brands directly from manufacturing companies </p>
+                <p>2. Professional advisory and implementation for full HoReCa setup</p>
+                <p>3. Delivering to GCC Countries</p>
+                <p>4. As you wish - Personalized coffee equipment & accessories </p>
+                <p>5. Excellent Customer Service Care</p>
+                <p>6. Professional pre-sales and maintenance support </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="abt" id="about">
+
+        <div class="row1">
+
+            <div class="img-cont1">
+                <img src="../Pics/team.jpg">
+            </div>
+
+            <div class="content">
+                <h2>Our team</h2>
+                <p>Let's stay in touch…
+                    or let's meet over coffee! </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--the footer section of the page that consists of a social media bar, quick navigation bar, and a credits section-->
+    <section class="footer">
+        <!--"socmed" has the facebook, insta, and youtube links which u can view more contents of the company-->
+        <div class="socmed">
+            <a href="https://www.facebook.com/coffeedesk.ae" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/coffeedesk.ae/" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/@coffeedesk-bestcoffeeinthe5652" class="fa fa-youtube"></a>
+        </div>
+        <!--and "link" is aquick navigation system that allows the user to go where they want after scrolling throughout the page-->
+        <div class="link">
+            <a href="../index.html">Home</a>
+            <a href="../Pages/_about.html">About</a>
+            <a href="../Pages/_contact.html">Contact</a>
+        </div>
+        <!--this has the credits of who created the website and all rights are reserved in the copy right, and a small info about this website-->
+        <div class="crdt">
+            Created by <span>Andrey Rafael Agleron</span> | All Rights Reserved
+            <p>-A website prototype for my Fathers company-</p>
+        </div>
+
+    </section>
+    <script src="../JS/websiteJS.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Note: This website is just a prototype, not everything has working function, 
+    some are just there for presentation, to show what they're supposed to do-->
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="CSS/website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--this link consists of different texts and icons that I got from cloudfare.com-->
+</head>
+
+<body>
+    <!--Header section consists of the logo,search bar, social media buttons, and the wish list icon-->
+    <header class="hdr">
+        <a href="index.html" class="logo"></a>
+        <img
+            src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/press_rooms/company_logos/13858/d572146a2c231390316666a7227d7b70.jpg">
+
+        <div class="srchbar">
+            <!--Note: The search function only works for the "brand" section of the website where you can search a specific product-->
+            <input type="text" placeholder="Looking for Something...?" id="srch-prod" onkeyup="search()">
+            <!--"onkeyup" lets the user type any value and sends a signal to JS, and the products will display upon matching the user input values-->
+            <div class="srchbtn">
+                <!--I used the <i> tag to add the search icon-->
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <div class="signup">
+
+            <ul>
+                <li><a href="Pages/_login.html">Log In</a></li>
+                <!--This page is for the log in section where you can log in an account-->
+            </ul>
+
+        </div>
+
+    </header>
+    <!--I separated the nav bar from the header so it can have its own section and not look crowded-->
+    <nav>
+        <!--container class for the navigation bar-->
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pages/_about.html">About</a></li>
+                <li><a href="#brands">Brands +</a>
+                    <!--the dropdown section is specifically only for the brands section-->
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="Pages/_acaia.html">Acaia</a></li>
+                            <li><a href="Pages/_aeropress.html">AeroPress</a></li>
+                            <li><a href="Pages/_comandante.html">Comandante</a></li>
+                            <li><a href="Pages/_fellow.html">Fellow</a></li>
+                            <li><a href="Pages/_hario.html">Hario</a></li>
+                            <li><a href="Pages/_moccamaster.html">Moccamaster</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Pages/_contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section class="home" id="home">
+        <!--everything here is the home sections which includes the highlighted items of the month  and other best selling products-->
+
+        <div class="text">
+            <h3>Items of the Month</h3>
+            <h1>Fellow</h1>
+            <p>- Ode Brew Grinder - Black</p>
+            <p>- Stagg EKG - Electric Pour-Over Kettle - Matte Black</p>
+            <p>- Atmos Canister (0.7L, Clear Glass and 0.4L, Matte Black)</p>
+            <a href="#" class="btn">Order Now</a> <!--a button which allows the user to order the item now (function not working)-->
+        </div>
+
+    </section>
+    <!--here is the best seller section which consists two brands Hario and Comandante-->
+    <div class="container1">
+        <h1 class="title">Best Sellings Items</h1>
+        <h2 class="brand">Hario</h2>
+        <div class="row"> 
+            <div class="item">
+                <img src="Pics/Ceramic Coffee Mill Skerton PRO.jpg">
+                <h4>Hario Skerton PRO - Hand grinder</h4>
+                <p>AED 190.00</p>
+            </div>
+
+            <div class="item">
+                <img src="Pics/Hario V60 Buono Kettle 1L.jpg">
+                <h4>Hario V60 Buono Kettle 1L</h4>
+                <p>AED 180.00</p>
+            </div>
+
+            <div class="item">
+                <img src="Pics/Hario V60 Insulated Stainless Steel Server PLUS 800 - Black .jpg">
+                <h4>Hario V60 Insulated Stainless Steel Server PLUS
+                    800 - Black</h4>
+                <p>AED 166.00</p>
+            </div>
+
+            <div class="item">
+                <img src="Pics/Paper Filters Bleached V60-02 100.jpg">
+                <h4>Hario Paper Filters Bleached V60-02 100</h4>
+                <p>AED 25.00</p>
+            </div>
+        </div>
+        <h2 class="brand">Comandante</h2>
+        <div class="row">
+            <div class="item">
+                <img src="Pics/comandante-4pack.jpg">
+                <h4>Comandante Bean Jar Brown Glass - Pack of 4</h4>
+                <p>AED 64.00</p>
+            </div>
+
+            <div class="item">
+                <img src="Pics/Comandante C40 MK4 Nitro Blade Burgundy.jpg">
+                <h4>Comandante C40 MK4 Nitro Blade Burgundy</h4>
+                <p>AED 1,050.00</p>
+            </div>
+
+            <div class="item">
+                <img src="Pics/barista-brush-no.-4.jpg">
+                <h4>Comandante Barista Brush #4</h4>
+                <p>AED 45.00</p>
+            </div>
+
+            <div class="item">
+                <img src="Pics/Comandante C40 MK4 Nitro Blade American.jpg">
+                <h4>Comandante C40 MK4 Nitro Blade American
+                    Cherry</h4>
+                <p>AED 1,050.00</p>
+            </div>
+        </div>
+    </div>
+    <!--the footer section of the page that consists of a social media bar, quick navigation bar, and a credits section-->
+    <section class="footer">
+        <!--"socmed" has the facebook, insta, and youtube links which u can view more contents of the company-->
+        <div class="socmed">
+            <a href="https://www.facebook.com/coffeedesk.ae" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/coffeedesk.ae/" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/@coffeedesk-bestcoffeeinthe5652" class="fa fa-youtube"></a>
+        </div>
+        <!--and "link" is aquick navigation system that allows the user to go where they want after scrolling throughout the page-->
+        <div class="link">
+            <a href="index.html">Home</a>
+            <a href="Pages/_about.html">About</a>
+            <a href="Pages/_contact.html">Contact</a>
+        </div>
+        <!--this has the credits of who created the website and all rights are reserved in the copy right, and a small info about this website-->
+        <div class="crdt">
+            Created by <span>Andrey Rafael Agleron</span> | All Rights Reserved
+            <p>-A website prototype for my Fathers company-</p>
+        </div>
+
+    </section>
+    <script src="JS/websiteJS.js"></script>
+
+</body>
+
+</html>

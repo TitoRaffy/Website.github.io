@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+
+body { /*main design for the overall appearance of the page*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: url("../Pics/coffeedesk.jpg")no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login { /*this is main login form, color will be white so that texts and other elements can be seen*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 420px;
+    background: white;
+    border-radius: 10px;
+}
+
+.login h1 { /*header title of the log in form*/
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.login form { 
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt-enter { /*this is basically the place holder and colour is grey so it has a faded look to the text*/
+    position: relative;
+    border-bottom: 2px solid grey;
+    margin: 30px 0; /*margin of the text are just enough so it wont be too far of to the left of the text box*/
+}
+
+.txt-enter input {
+    height: 40px;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.txt-enter label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: grey;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.txt-enter span:before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0; 
+    width: 100%;
+    height: 2px;
+    background:  #b52367;
+    transition: 0.5s;
+}
+/*got this idea from "CodingNepal" in Youtube*/
+.txt-enter input:focus ~ label, /*this lets the label float up and change color, from grey in to the main colour scheme*/
+.txt-enter input:valid ~ label {
+    top: -5px;
+    color:#b52367;
+}
+
+.txt-enter input:focus ~ span::before, 
+.txt-enter input:valid ~ span:before {
+    width: 100%
+}
+
+.pass { /*password section is just identical to the user name section*/
+    margin: -5px 0 20px 5px;
+    color:  #b52367;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+.login form #button { /*the button ID is right at the bottom of the password and it can be seen easily because of the main colour scheme popping up and the wide width*/
+    width: 100%;
+    height: 50px;
+    border: 3px solid ;
+    background:white;
+    border-radius: 25px;
+    font-size: 18px;
+    color:  #b52367;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.login form #button { /*the log in button has an hover effect, it is simple and it just changes colour, but still has a smooth effect to it*/
+    border-color:#b52367;
+    transition: 0.5s;
+}
+
+.login form #button:hover {
+    background:  #b52367;
+    color:white;
+    border: none;
+}
